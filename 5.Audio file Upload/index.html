@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Upload</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Upload Your Audio File</h1>
+      <form id="upload-form">
+        <label for="audio-upload" class="upload-button">Choose Audio File</label>
+        <input id="audio-upload" type="file" accept="audio/*" onchange="handleFileUpload()">
+        <button type="submit" id="submit-button">Upload</button>
+      </form>
+      <div id="audio-preview" class="audio-preview">
+        <!-- Audio preview will be shown here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
